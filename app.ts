@@ -1,6 +1,6 @@
 "use-strict";
 
-/*
+
 // Create an array in TypeScript
 const nums: number[] = [1, 2, 3, 4, 5];
 console.log(nums);
@@ -67,9 +67,9 @@ const obj: {id: number , username: string, password: string} [] = [
     },
 ]
 
-    console.log(obj); */
+    console.log(obj); 
 
-/*
+
 const numbers: number[] = [10, 3, 2, 9, 3, 4, 90, 5];
 
 
@@ -107,9 +107,9 @@ function findWord(words:string, target: string, target2: string): string {
     else return "Not found."
 }
 
-console.log(findWord(words, "RRR", "hindi")); */
+console.log(findWord(words, "RRR", "hindi")); 
 
-/*
+
 const movies: { movieName: string; year: number }[] = [
   {
     movieName: "RRR 2021 Hindi",
@@ -197,9 +197,9 @@ function findMinLengthWord(words: string[]): string {
 console.log();
 
 console.log(`Maximum word is from : ${findMaxLengthWord(wordsArray)}`);
-console.log(`Minimum word is from : ${findMinLengthWord(wordsArray)}`); */
+console.log(`Minimum word is from : ${findMinLengthWord(wordsArray)}`); 
 
-/*
+
 let arr: number[] = [1, 2, 3, 4, 5];
 arr.push(6);
 console.log(arr);
@@ -278,9 +278,9 @@ const findWordsWithCapitalLetters = (words: string[]): string[] => {
 };
 
 const findCapitalLettersWords = findWordsWithCapitalLetters(words);
-console.log(findCapitalLettersWords); */
+console.log(findCapitalLettersWords); 
 
-/*
+
 //      Tuples    //
 // define our tuple
 let ourTuple: [number, boolean, string];
@@ -312,9 +312,9 @@ console.log(myNamedTuples);
 
 // Destructuring myNamedTuples
 const [id, username] = myNamedTuples;
-console.log(id, username); */
+console.log(id, username); 
 
-/*
+
 //    Object Types    //
 const car: {type: string, model: string, year: number} = {
   type: "Toyota",
@@ -350,11 +350,11 @@ console.log(nameAgeMap);
 
 const namesList: { [username: string] : string } = {};
 namesList.jacob = "Jacob";
-console.log(namesList); */
+console.log(namesList); 
 
 //    TypeScript Enums     //
 
-/*
+
 //Numeric Enums - Default
 enum CardinalDirections {
   North,
@@ -419,9 +419,9 @@ enum userDetails {
   country = "New Zealand"
 }
 
-console.log(userDetails.name); */
+console.log(userDetails.name); 
 
-/*
+
 //      TypeScript Type Aliases and Interfaces     //
 
 // Type Aliases
@@ -484,9 +484,9 @@ interface ExtendedUserCredentials extends userCredentials {
 }
 
 const extendedUserCredentials: ExtendedUserCredentials = {username: "Jacob", password: "secret", phone: 100000, gender: "Male", isVoter: true}
-console.log(extendedUserCredentials); */
+console.log(extendedUserCredentials); 
 
-/*
+
 
 //    TypeScript Union Types      //
 function printStatusCode(code: string | number) {
@@ -507,9 +507,9 @@ interface myUnionUserCreds {
 }
 
 const myUniUserCreds: myUnionUserCreds = {username: "Jacob", phone: "1234567890"}
-console.log(myUniUserCreds); */
+console.log(myUniUserCreds); 
 
-/*
+
 //      TypeScript Functions      //
 
 // Return Type
@@ -579,9 +579,9 @@ console.log((<string>x).length);
 
 // Force casting
 let a:unknown = 'hello';
-// console.log(((a as unknown) as number).length); */
+// console.log(((a as unknown) as number).length); 
 
-/*
+
 //      TypeScript Classes      //
 class Person {
   name: string;
@@ -715,11 +715,11 @@ class Rectangle4 extends Polygon {
   public getArea(): number {
     return this.width * this.height;
   }
-} */
+} 
 
 //      TypeScript Utility Types      //
 
-/*
+
 // Partial
 interface Point {
   x: number,
@@ -799,9 +799,9 @@ interface Person {
 }
 
 const person: Readonly<Person> = {name: "Dylan", age: 35};
-person.name = "Jacob"; // prog.ts(11, 8): error TS2540: Cannot assign to 'name' because it is a read-only property. */
+person.name = "Jacob"; // prog.ts(11, 8): error TS2540: Cannot assign to 'name' because it is a read-only property. 
 
-/*
+
 //      TypeScript Keyof      //
 // keyof with explicit keys
 interface Person {
@@ -826,7 +826,7 @@ type StringMap = {[key: string]: unknown};
 // `keyof StringMap` resolves to 'string' here
 function createStringPair(property: keyof StringMap, value: string): StringMap {
   return { [property]: value }
-} */
+} 
 
 //      TypeScript Nill & Undefined
 let value: string | undefined | null = null;
